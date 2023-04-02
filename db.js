@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const connectDB = handler => async (req, res) => {
+export const connectDB = handler => async (req, res) => {
   if (mongoose.connections[0].readyState) {
     return handler(req, res);
   }
