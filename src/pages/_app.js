@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function NextApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default NextApp
